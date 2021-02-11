@@ -3,6 +3,7 @@ import ReactMapGL, {Marker, NavigationControl, Popup} from "react-map-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import style from "./App.module.css";
 import * as parkDate from "./data/Skateboard_Parks.json";
+import image from "./assets/skateboard.svg";
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
 							e.preventDefault();
 							setSelectedPark(park)
 						}}>
-							<img src="/skateboard.svg" alt="Skate Park Icon"/>
+							<img src={image} alt="Skate Park Icon"/>
 						</button>
 					</Marker>
 				))}
